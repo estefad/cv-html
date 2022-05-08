@@ -1,0 +1,88 @@
+@import url("https://fonts.googleapis.com/css2?family=Catamaran:wght@100&family=EB+Garamond:ital@0;1&family=Nanum+Gothic+Coding&family=Poiret+One&display=swap");
+/*VARIABLES*/
+/*RESET-todas las etiquetas pueden recibir contenido antes o despues*/
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; }
+
+html {
+  font-size: 62,5%;
+  /*10px de base al html, y para pasar a em 1em o 24px= 2.4em*/ }
+
+/*GLOBALS*/
+body {
+  display: grid;
+  min-width: 1200px;
+  height: 200vh;
+  grid-template-columns: 3, 1fr;
+  grid-template-rows: 3, 1fr;
+  grid-template-areas: "aside header header" "aside main main" "footer footer footer"; }
+
+.header {
+  grid-column: 2/4; }
+
+.aside {
+  grid-column: 1/1;
+  grid-row: 1/5; }
+
+.main {
+  grid-row: 2/4; }
+
+.footer {
+  grid-column: 2/4; }
+
+ul {
+  list-style-type: none; }
+
+a {
+  text-decoration: none; }
+
+.tittle {
+  display: flex;
+  align-items: center;
+  flex-wrap: nowrap;
+  justify-content: center; }
+  .tittle h1 {
+    font-family: "catamaran", sans-serif; }
+  .tittle .tel {
+    font-family: "catamaran", sans-serif;
+    margin-top: 6rem;
+    margin-left: -16.6rem;
+    font-size: 1.3em; }
+
+fieldset {
+  margin-top: 3rem; }
+
+.date {
+  border-color: #c1c9c9;
+  padding: .5rem; }
+
+.date__ul li {
+  font-family: "catamaran", sans-serif;
+  text-align: center; }
+
+.aside {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  justify-content: center;
+  padding: .2rem;
+  background-color: #c1c9c9; }
+  .aside .photo__contact {
+    width: 150px;
+    height: 180px;
+    box-shadow: 10px 10px 20px rgba(255, 255, 255, 0.7), -10px -10px 20px rgba(255, 255, 255, 0.8);
+    border-radius: 5px;
+    margin-bottom: -11rem; }
+  .aside .content {
+    max-inline-size: fit-content; }
+    .aside .content .intro {
+      font-family: "catamaran", sans-serif;
+      margin-bottom: 36rem;
+      text-align: center; }
+
+::marker {
+  color: #c1c9c9; }

@@ -1,0 +1,31 @@
+.tittle{
+    @include flex(flex, center, nowrap, center);
+
+    h1{
+        font-family: $font-one;
+    }
+
+    .tel{
+        font-family: $font-one;
+        margin-top: 6rem;
+        margin-left: -16.6rem;
+        font-size: 1.3em;
+    }
+}
+
+fieldset{
+    margin-top: 3rem;
+}
+
+.date{
+    border-color: $color1;
+    padding: .5rem;
+}
+
+.date__ul li{
+    font-family: $font-one; 
+    text-align: center;
+}
+
+
+

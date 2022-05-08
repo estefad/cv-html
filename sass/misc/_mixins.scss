@@ -1,0 +1,15 @@
+@mixin flex($display, $align, $wrap, $justify) {
+    display: $display;
+    align-items: $align;
+    flex-wrap: $wrap;
+    justify-content: $justify;
+}
+
+@mixin artShadowFx ( $wh: 250px, $ht: 250px, 
+ $eje: 21px,){  
+        width: $wh; 
+        height: $ht;
+        box-shadow: $eje $eje ($eje*2) rgba(255, 255, 255, 0.7),
+        (-$eje) (-$eje) ($eje*2) rgba(255, 255, 255, 0.8) ;
+        
+}

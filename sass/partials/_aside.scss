@@ -1,0 +1,23 @@
+.aside{
+    @include flex(flex, center, wrap, center);
+    padding: .2rem;
+    background-color: $color1;
+
+    .photo__contact{
+        @include artShadowFx(150px, 180px, 10px);
+        border-radius: 5px;
+        margin-bottom: -11rem;
+    }
+    
+    .content{
+        
+        max-inline-size: fit-content;
+
+        .intro{
+            font-family: $font-one;
+            margin-bottom: 36rem;
+            text-align: center;
+        }
+    }
+}
+
