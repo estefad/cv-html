@@ -1,3 +1,50 @@
-::marker {
-  color: $color1;
+main{
+@include flex(flex, none, nowrap, none);
+margin-left: 1rem;
+margin-bottom: -9rem;
+
+    .tec{
+        align-content: center;
+    }
+    p{
+        font-family: $font-one;
+        font-size: 1em;
+        margin-bottom: 1rem;
+    }
+
+    ::marker{
+        color: $color1;
+    }
+
+    h2{
+        margin-left: 1rem;
+        margin-bottom: 1rem;
+        font-family: $font-one;
+        transition: all 2s;
+
+        &:hover{
+            @include hov($color1, 1.8em);
+        }
+    }
+      
+    .text{
+        margin-left: 4.5rem;
+        margin-bottom: 1rem;
+        font-family: $font-one;
+        font-size: 1.5em;
+    }
+    ul img{
+        margin-left: 9rem;
+    }
+
+    .experience{
+        margin: 0 auto;
+        font-family: $font-two;
+        font-weight: bold;
+    }
+
+    .academic{
+      @extend .experience;
+    }
 }
+

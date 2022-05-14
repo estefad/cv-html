@@ -13,3 +13,8 @@
         (-$eje) (-$eje) ($eje*2) rgba(255, 255, 255, 0.8) ;
         
 }
+
+@mixin hov($color, $size ){  
+    color: $color;
+    font-size: $size;  
+}

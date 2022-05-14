@@ -17,12 +17,12 @@ body {
   display: grid;
   min-width: 1200px;
   height: 200vh;
-  grid-template-columns: 3, 1fr;
+  grid-template-columns: 4, 1fr;
   grid-template-rows: 3, 1fr;
-  grid-template-areas: "aside header header" "aside main main" "footer footer footer"; }
+  grid-template-areas: "aside header header header" "aside main main main" "aside"; }
 
 .header {
-  grid-column: 2/4; }
+  grid-column: 2/5; }
 
 .aside {
   grid-column: 1/1;
@@ -30,9 +30,6 @@ body {
 
 .main {
   grid-row: 2/4; }
-
-.footer {
-  grid-column: 2/4; }
 
 ul {
   list-style-type: none; }
@@ -70,19 +67,72 @@ fieldset {
   flex-wrap: wrap;
   justify-content: center;
   padding: .2rem;
+  margin: 1rem;
   background-color: #c1c9c9; }
-  .aside .photo__contact {
-    width: 150px;
-    height: 180px;
-    box-shadow: 10px 10px 20px rgba(255, 255, 255, 0.7), -10px -10px 20px rgba(255, 255, 255, 0.8);
-    border-radius: 5px;
-    margin-bottom: -11rem; }
+  .aside .photo {
+    position: inherit; }
+    .aside .photo__contact {
+      width: 150px;
+      height: 180px;
+      box-shadow: 10px 10px 20px rgba(255, 255, 255, 0.7), -10px -10px 20px rgba(255, 255, 255, 0.8);
+      border-radius: 5px;
+      margin-bottom: -11rem; }
   .aside .content {
     max-inline-size: fit-content; }
     .aside .content .intro {
       font-family: "catamaran", sans-serif;
-      margin-bottom: 36rem;
-      text-align: center; }
+      margin-bottom: 24rem;
+      text-align: center;
+      position: inherit; }
+  .aside .contact {
+    display: flex;
+    align-items: none;
+    flex-wrap: nowrap;
+    justify-content: none; }
+    .aside .contact .redes {
+      font-family: "catamaran", sans-serif; }
+    .aside .contact .li__contact {
+      margin-left: -2rem;
+      margin-bottom: -1rem; }
+    .aside .contact .li__contact1 {
+      margin-left: -3.5rem;
+      margin-bottom: -4.2rem;
+      border-radius: 80%; }
+    .aside .contact .li__contact2 {
+      margin-bottom: -3rem;
+      border-radius: 20%; }
 
-::marker {
-  color: #c1c9c9; }
+main {
+  display: flex;
+  align-items: none;
+  flex-wrap: nowrap;
+  justify-content: none;
+  margin-left: 1rem;
+  margin-bottom: -9rem; }
+  main .tec {
+    align-content: center; }
+  main p {
+    font-family: "catamaran", sans-serif;
+    font-size: 1em;
+    margin-bottom: 1rem; }
+  main ::marker {
+    color: #c1c9c9; }
+  main h2 {
+    margin-left: 1rem;
+    margin-bottom: 1rem;
+    font-family: "catamaran", sans-serif;
+    transition: all 2s; }
+    main h2:hover {
+      color: #c1c9c9;
+      font-size: 1.8em; }
+  main .text {
+    margin-left: 4.5rem;
+    margin-bottom: 1rem;
+    font-family: "catamaran", sans-serif;
+    font-size: 1.5em; }
+  main ul img {
+    margin-left: 9rem; }
+  main .experience, main .academic {
+    margin: 0 auto;
+    font-family: "Poiret One", cursive;
+    font-weight: bold; }

@@ -1,12 +1,19 @@
 .aside{
     @include flex(flex, center, wrap, center);
     padding: .2rem;
+    margin: 1rem;
     background-color: $color1;
 
-    .photo__contact{
-        @include artShadowFx(150px, 180px, 10px);
-        border-radius: 5px;
-        margin-bottom: -11rem;
+    .photo{
+        position: inherit;
+
+        &__contact{
+            @include artShadowFx(150px, 180px, 10px);
+            border-radius: 5px;
+            margin-bottom: -11rem;
+            
+        }
+
     }
     
     .content{
@@ -15,9 +22,41 @@
 
         .intro{
             font-family: $font-one;
-            margin-bottom: 36rem;
+            margin-bottom: 24rem;
             text-align: center;
+            position: inherit;
         }
     }
+
+    .contact{
+        @include flex(flex, none, nowrap, none);
+
+        .redes{
+            font-family: $font-one;
+        }
+    
+        .li__contact{
+            margin-left: -2rem;
+            margin-bottom: -1rem;
+        }
+    
+        .li__contact1{
+            margin-left: -3.5rem;
+            margin-bottom: -4.2rem;
+            border-radius: 80%;
+        }
+    
+        .li__contact2{
+            margin-bottom: -3rem;
+            border-radius: 20%;
+        }
+
+    }
+
+    
+
+   
 }
+
+
 

@@ -17,16 +17,16 @@ body{
     display: grid;
     min-width: 1200px;
     height: 200vh;
-    grid-template-columns: 3, 1fr;
+    grid-template-columns: 4, 1fr;
     grid-template-rows: (3, 1fr);
     grid-template-areas: 
-    "aside header header"
-    "aside main main"
-    "footer footer footer";
+    "aside header header header"
+    "aside main main main"
+    "aside";
 }
 
 .header{
-    grid-column: 2/4;
+    grid-column: 2/5;
 }
 
 .aside{
@@ -36,10 +36,6 @@ body{
 
 .main {
     grid-row: 2/4;
-}
-
-.footer{
-    grid-column: 2/4;
 }
 
 
