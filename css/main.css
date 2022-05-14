@@ -15,7 +15,7 @@ html {
 /*GLOBALS*/
 body {
   display: grid;
-  min-width: 1200px;
+  min-width: 1280px;
   height: 200vh;
   grid-template-columns: 4, 1fr;
   grid-template-rows: 3, 1fr;
@@ -121,10 +121,12 @@ main {
     margin-left: 1rem;
     margin-bottom: 1rem;
     font-family: "catamaran", sans-serif;
-    transition: all 2s; }
+    transition: all 1s; }
     main h2:hover {
-      color: #c1c9c9;
-      font-size: 1.8em; }
+      padding: 0.2rem;
+      background-color: #c1c9c9;
+      border-radius: 20px;
+      margin: .5rem; }
   main .text {
     margin-left: 4.5rem;
     margin-bottom: 1rem;

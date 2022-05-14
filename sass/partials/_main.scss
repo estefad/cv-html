@@ -20,10 +20,12 @@ margin-bottom: -9rem;
         margin-left: 1rem;
         margin-bottom: 1rem;
         font-family: $font-one;
-        transition: all 2s;
+        transition: all 1s;
 
         &:hover{
-            @include hov($color1, 1.8em);
+            @include pad(.2rem, $color1);
+            border-radius: 20px;
+            margin: .5rem;
         }
     }
       

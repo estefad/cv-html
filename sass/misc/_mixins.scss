@@ -18,3 +18,9 @@
     color: $color;
     font-size: $size;  
 }
+
+@mixin pad($padding, $color ){  
+    padding: $padding;
+    background-color: $color;
+      
+}
